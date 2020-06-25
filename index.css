@@ -1,12 +1,11 @@
 body
 {
 	background-color: #555555;
+	font-family: verdana;
 }
 .main
 {
 	background-color: #ffffff;
-	width: 940px;
-	height: 800px;
 	margin: 0 auto;
 	position: relative;
 }
@@ -17,62 +16,105 @@ header
 h1, h3
 {
 	margin: 0 auto;
-	margin-left: 50px;
-	font-family: sans-serif;
+	margin-left: 9%;
+	letter-spacing: -2.5px; /*espacio entre letras*/
 }
 h3
 {
 	opacity: 0.5;
+	letter-spacing: -1.5px;
 }
-nav 
-{
-	background-color: #FF7D00;
-	margin: 50px;
-}
-nav ul
+#menu
 {
 	display: flex;
-	padding: 5px;
-	justify-content: space-around;
+	/*márgenes de izquierda y derecha del menú*/
+	margin-left: 9%;       
+	margin-right: 12%;
 }
-nav ul li
-{
-	color: #ffffff;
-	font-weight: bold;
-}
-nav a
-{
-	color: #ffffff;
-	text-decoration: none;
-	list-style: none;	
-}
-#contenedorPrincipal
-{
-	background-color: white;
-	display: flex;
-	width: 93%;
-	margin: 50px;	
-}
-#contenedor1
+#menu1
 {
 	width: 80%;
+	background: rgb(255,128,0);
+	background: linear-gradient(180deg, rgba(255,128,0,1) 0%, rgba(255,165,34,1) 82%);
+}
+#menu2
+{
+	width: 20%;
+	background: rgb(255,128,0);
+	background: linear-gradient(180deg, rgba(255,128,0,1) 0%, rgba(255,165,34,1) 82%);
+}
+#menuContenido1
+{
+	display: flex; /* */
+	width: 100%;
+	justify-content: space-around;
+	padding: 0px;	
+}
+#menuContenido
+{
+	font-weight: bold;
+	color: #ffffff; /* color de las letras*/
+	text-decoration: none; /* decoración del texto*/
+	list-style: none; /* estilo de la lista */
+}
+#contenidoPrincipal
+{
+	display: flex;
+	margin-left: 9%;       
+	margin-right: 12%;
 	background-color: white;
 }
-#contenedor2
+#contenido1
 {
-	border-left: 1px solid #ff0000;
-	width: 20%;
 	background-color: white;
+	width: 80%;
+}
+#contenido2
+{
+	background-color: white;
+	border-left: 1px solid #CDCDCD;
+	height: 95%;
+	width: 20%;
+}
+#Imagen
+{
+	margin-left: 10px;
+	width: 79%;
+}
+#Contenido 
+{
+	list-style: none;
+	width: 100%;
+	color: #ff8000;
+	margin: 3px;
+	margin-left: 1px;
+	font-weight: 500;
 }
 #titulo
 {
-	font-family: sans-serif;
-	margin-left: 55px;
+	margin-left: 10px;
+	letter-spacing: -3px; /*espacio entre letras*/
+	color: #ff7e00;
 	text-decoration: underline;
-	color: #FF7D00;
 }
-#encabezado
+#texto
 {
-	width: 80%;
-	background-color: white;
+	margin-left: 10px;
+	margin-right: 20px;
+	text-align: justify;
+}
+#titulos
+{
+	margin-left: 10px;
+	color: #555555;
+}
+#PiePagina
+{
+	text-align: center;
+	color: white;
+}
+#enlaces
+{
+	color: #ff8000;
+	text-decoration: underline;	
 }
